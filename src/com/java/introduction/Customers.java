@@ -6,10 +6,10 @@ public class Customers {
     String model;int quantity;
     double price, mobileCost, finalBill;
     Customers() {
-        this("Unknown", 0, 0);
+        this("Unknown", 0);
     }
     Customers(String model) {
-        this(model, 1, 0);
+        this(model, 0);
     }
     Customers(String model, int quantity) {
         this(model, quantity, 0);
