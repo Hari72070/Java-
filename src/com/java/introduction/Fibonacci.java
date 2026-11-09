@@ -18,8 +18,8 @@ public class Fibonacci{
 			s = fibbo;
 			System.out.print(" " + fibbo);
 		}
+		System.out.println(f);
 	}
-
 }
 
  // 0 1 1 2 3 5 8 13 21 34 55 99
