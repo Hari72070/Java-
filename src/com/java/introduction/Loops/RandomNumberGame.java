@@ -1,13 +1,9 @@
 package com.java.introduction.Loops;
-
 import java.util.Random;
 import java.util.Scanner;
-
 public class RandomNumberGame {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
 		boolean guessed = false;
 		int count = 0;
 		String y;
@@ -26,8 +22,7 @@ public class RandomNumberGame {
 					System.out.println("Your guessed number is too high");
 				}
 				count ++;
-			}while (count < 3 && !guessed);
-			
+			}while (count < 5 && !guessed);
 			if (guessed == false) {
 			    System.out.println("Game Over! The correct number is: " + num);
 			}
@@ -36,9 +31,7 @@ public class RandomNumberGame {
 			y = scanner.nextLine();
 			count = 0;
 			guessed = false;
-
-		}while(y.equalsIgnoreCase("Y"));
-		
+		}while(y.equalsIgnoreCase("Y"));	
 	}
 }
 
