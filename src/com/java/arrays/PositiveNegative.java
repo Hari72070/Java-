@@ -13,25 +13,24 @@ public class PositiveNegative {
 		int size[] = new int[arr];
 		int PosCount = 0;
 		int NegCount = 0;
-		
-		for(int i= 0; i<size.length; i++) {
+		System.out.println("Enter the array elements:");
+		for (int i = 0; i < size.length; i++) {
 			size[i] = scanner.nextInt();
+
 		}
-		System.out.println("Enter the array elements!!");
-		for(int i=0; i<size.length;i++) {
+		System.out.println("Array Elements are : ");
+		for (int i = 0; i < size.length; i++) {
 			System.out.println(size[i]);
 		}
 		for (int i = 0; i < size.length; i++) {
-			if(size[i]>0) {
+			if (size[i] > 0) {
 				PosCount++;
-			}
-			else if(size[i]<0) {
+			} else if (size[i] < 0) {
 				NegCount++;
 			}
 		}
-		System.out.println("Positive count is : "+ PosCount);
-		System.out.println("Negative count is : "+ NegCount);
+		System.out.println("Positive count is : " + PosCount);
+		System.out.println("Negative count is : " + NegCount);
 	}
-	
 
 }
