@@ -18,7 +18,7 @@ public class SecondLargest {
 			System.out.println(num[i] + " ");
 		}
 		int max = num[0];
-		int secondmax = num[0];
+		int secondmax = num[0]; 
 		for(int i=1; i<num.length;i++) {
 			if(num[i]>max) {
 				secondmax = max;

@@ -1,16 +1,10 @@
 package com.java.introduction;
-
 import java.util.Scanner;
-
 public class SWITCHPOC {
-
 	public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
         String categoryChoice;
         double grandTotal = 0;
-
         do {
             System.out.println("\n===== RESTAURANT MENU =====");
             System.out.println("Soups");
@@ -20,26 +14,17 @@ public class SWITCHPOC {
             System.out.println("Non-Veg Main Course");
             System.out.println("Mock Tails");
             System.out.println("Desserts");
-
             System.out.println("Enter the category:");
             String item = sc.nextLine();
-
             switch (item) {
-
-            // SOUPS
             case "Soups" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Soup you want to order:");
-
                     int quantity = 0;
                     double soup_price = 0;
-
                     String si = sc.nextLine();
-
                     switch (si) {
                     case "TomatoSoup" -> {
                         soup_price = 80;
@@ -71,42 +56,29 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Soup not available!");
                     }
-
                     if (soup_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = soup_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + soup_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another soup? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Soups bill: Rs. " + total);
                 grandTotal += total;
             }
-
-            // VEG STARTERS
             case "Veg Starters" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Item you want to order:");
-
                     int quantity = 0;
                     double veg_price = 0;
-
                     String vi = sc.nextLine();
-
                     switch (vi) {
                     case "PaneerTikka" -> {
                         veg_price = 220;
@@ -130,42 +102,29 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Item not available!");
                     }
-
                     if (veg_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = veg_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + veg_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another item? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Veg Starters bill: Rs. " + total);
                 grandTotal += total;
             }
-
-            // NON VEG STARTERS
             case "Non Veg Starters" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Item you want to order:");
-
                     int quantity = 0;
                     double nonveg_price = 0;
-
                     String nvi = sc.nextLine();
-
                     switch (nvi) {
                     case "Chicken65" -> {
                         nonveg_price = 220;
@@ -189,42 +148,29 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Item not available!");
                     }
-
                     if (nonveg_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = nonveg_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + nonveg_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another item? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Non Veg Starters bill: Rs. " + total);
                 grandTotal += total;
             }
-
-            // VEG MAIN COURSE
             case "Veg Main Course" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Item you want to order:");
-
                     int quantity = 0;
                     double vegmain_price = 0;
-
                     String vm = sc.nextLine();
-
                     switch (vm) {
                     case "VegBiryani" -> {
                         vegmain_price = 200;
@@ -248,42 +194,29 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Item not available!");
                     }
-
                     if (vegmain_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = vegmain_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + vegmain_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another item? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Veg Main Course bill: Rs. " + total);
                 grandTotal += total;
             }
-
-            // NON VEG MAIN COURSE
             case "Non-Veg Main Course" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Item you want to order:");
-
                     int quantity = 0;
                     double nonvegmain_price = 0;
-
                     String nvm = sc.nextLine();
-
                     switch (nvm) {
                     case "ChickenBiryani" -> {
                         nonvegmain_price = 280;
@@ -307,42 +240,29 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Item not available!");
                     }
-
                     if (nonvegmain_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = nonvegmain_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + nonvegmain_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another item? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Non-Veg Main Course bill: Rs. " + total);
                 grandTotal += total;
             }
-
-            // MOCK TAILS
             case "Mock Tails" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Item you want to order:");
-
                     int quantity = 0;
                     double mocktail_price = 0;
-
                     String mi = sc.nextLine();
-
                     switch (mi) {
                     case "Mojito" -> {
                         mocktail_price = 120;
@@ -370,42 +290,29 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Item not available!");
                     }
-
                     if (mocktail_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = mocktail_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + mocktail_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another item? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Mock Tails bill: Rs. " + total);
                 grandTotal += total;
             }
-
-            // DESSERTS
             case "Desserts" -> {
-
                 String yn;
                 double total = 0;
-
                 do {
                     System.out.println("Enter the Item you want to order:");
-
                     int quantity = 0;
                     double dessert_price = 0;
-
                     String di = sc.nextLine();
-
                     switch (di) {
                     case "IceCream" -> {
                         dessert_price = 80;
@@ -429,42 +336,28 @@ public class SWITCHPOC {
                     }
                     default -> System.out.println("Item not available!");
                     }
-
                     if (dessert_price > 0) {
                         System.out.println("Enter the quantity:");
                         quantity = Integer.parseInt(sc.nextLine());
-
                         double itemTotal = dessert_price * quantity;
                         total += itemTotal;
-
                         System.out.println("Price per item: Rs. " + dessert_price);
                         System.out.println("Quantity: " + quantity);
                         System.out.println("Item total: Rs. " + itemTotal);
                     }
-
                     System.out.println("Do you want to order another item? (y/n)");
                     yn = sc.nextLine();
-
                 } while (yn.equalsIgnoreCase("y"));
-
                 System.out.println("Desserts bill: Rs. " + total);
                 grandTotal += total;
             }
-
             default -> System.out.println("Invalid category!");
             }
-
-            System.out.println(
-                "Do you want to continue with another category? (y/n)"
-            );
+            System.out.println("Do you want to continue with another category? (y/n)");
             categoryChoice = sc.nextLine();
-
         } while (categoryChoice.equalsIgnoreCase("y"));
-
         System.out.println("\n===== FINAL RESTAURANT BILL =====");
         System.out.println("Grand Total: Rs. " + grandTotal);
         System.out.println("Thank you for visiting our restaurant!");
-
-        sc.close();
     }
 }
