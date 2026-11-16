@@ -13,13 +13,14 @@ public class Prime {
 		for (int i = 0; i < num.length; i++) {
 			num[i] = scanner.nextInt();
 		}
-		for (int i = 2; i < num.length; i++) {
+		System.out.print("Prime numbers are: ");
+		for (int i = 0; i < num.length; i++) {
 			boolean status = true;
 			if(num[i]<= 1) {
 				status = false;
 			}
 			else {
-				for (int j = 2; j < num.length; j++) {
+				for (int j = 2; j < num[i]; j++) {
 					if(num[i]%j == 0) {
 						status = false;
 						break;
@@ -28,11 +29,12 @@ public class Prime {
 				}
 			}
 		if(status) {
-			 System.out.println(num[i] + " is a Prime Number");
+				    System.out.print(num[i] + " ");
+			 }
 		}
 		
 	}
 
-	}
+	
 }
 
