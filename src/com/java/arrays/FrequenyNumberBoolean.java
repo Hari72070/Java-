@@ -1,5 +1,7 @@
 package com.java.arrays;
 
+import java.time.chrono.IsoChronology;
+
 public class FrequenyNumberBoolean {
 
 	public static void main(String[] args) {
@@ -7,21 +9,20 @@ public class FrequenyNumberBoolean {
 		for (int i = 0; i < arr.length; i++) {
 			int count = 0;
 			boolean flag = false;
-			for (int j = 0; j < i; j++) {
-				if (arr[i] == arr[j]) {
-					flag = true;
+			for(int j=0; j<i; j++) {
+				if(arr[i] == arr[j]) {
+					flag = true; 
 					break;
 				}
 			}
-			if (flag) {
+			if(flag)
 				continue;
-			}
-			for (int k = 0; k < arr.length; k++) {
-				if (arr[i] == arr[k]) {
-					count++;
+			for(int k=0; k<arr.length; k++) {
+				if(arr[i] == arr[k]) {
+					count ++;
 				}
 			}
-			System.out.println(arr[i] + "count is : " + count);
+			System.out.println("Count of " + arr[i] + "is" + count);
 		}
 	}
 }
