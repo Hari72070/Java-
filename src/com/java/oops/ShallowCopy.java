@@ -51,7 +51,7 @@ public class ShallowCopy {
 		System.out.println(employee.id);
 		System.out.println(employee.name);
 		System.out.println(employee.addres.city); 
-		
+		System.out.println("**************************");
 	}
 
 }
