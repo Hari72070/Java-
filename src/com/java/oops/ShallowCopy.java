@@ -1,6 +1,6 @@
 package com.java.oops;
 
-class Employee implements Cloneable{
+class Employee implements Cloneable {
 	int id;
 	String name;
 	Address addres;
@@ -9,7 +9,7 @@ class Employee implements Cloneable{
 	protected Object clone() throws CloneNotSupportedException {
 		return super.clone();
 	}
-	
+
 	public Employee(int id, String name, Address addres) {
 		this.id = id;
 		this.name = name;
@@ -24,7 +24,6 @@ class Address {
 		this.city = city;
 	}
 }
-
 public class ShallowCopy {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
@@ -34,13 +33,13 @@ public class ShallowCopy {
 		System.out.println(employee.name);
 		System.out.println(employee.addres.city);
 		System.out.println("**************************");
-		
-		Employee e2 = (Employee)employee.clone();
+
+		Employee e2 = (Employee) employee.clone();
 		System.out.println(e2.id);
 		System.out.println(e2.name);
 		System.out.println(e2.addres.city);
 		System.out.println("**************************");
-		
+
 		e2.id = 2;
 		e2.name = "Rohit";
 		e2.addres.city = "Mumbai";
@@ -50,7 +49,7 @@ public class ShallowCopy {
 		System.out.println("**************************");
 		System.out.println(employee.id);
 		System.out.println(employee.name);
-		System.out.println(employee.addres.city); 
+		System.out.println(employee.addres.city);
 		System.out.println("**************************");
 	}
 
