@@ -1,5 +1,4 @@
 package com.java.oops;
-
 class Cricketer {
 	int Jno;
 	String name;
@@ -34,7 +33,6 @@ class Team {
 		this.city = team.city;
 	}
 }
-
 public class DeepCopy {
 
 	public static void main(String[] args) {
@@ -44,13 +42,10 @@ public class DeepCopy {
 		
 		Cricketer cricketer2 = new Cricketer(cricketer);
 		cricketer2.cricketerInfo();
-		
 		cricketer2.Jno = 9;
 		cricketer2.name = "Harinadh";
 		cricketer2.team.city = "AndhraLions";
 		cricketer2.cricketerInfo();
 		cricketer.cricketerInfo();
-		
 	}
-
 }
