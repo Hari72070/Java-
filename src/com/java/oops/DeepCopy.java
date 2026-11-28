@@ -1,4 +1,6 @@
 package com.java.oops;
+
+//Deep copy
 class Cricketer {
 	int Jno;
 	String name;
